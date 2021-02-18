@@ -23,6 +23,9 @@ a {
   height: auto;
   width: 100%;
 }
+.hidden {
+  display: none;
+}
 header {
   display: flex;
   justify-content: space-between;
