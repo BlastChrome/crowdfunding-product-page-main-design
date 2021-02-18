@@ -3,6 +3,7 @@ const mb_nav = (() => {
     const open_btn = document.querySelector(".open");
     const close_btn = document.querySelector(".close")
 
+    // Open and close functions
     const openNav = () => {
         open_btn.classList.add("hidden"); 
         close_btn.classList.remove("hidden"); 
@@ -15,6 +16,7 @@ const mb_nav = (() => {
         open_btn.classList.remove("hidden");  
         nav.classList.add("hidden");
     }
+    
 
     // Event Listeners
     open_btn.addEventListener('click', openNav); 

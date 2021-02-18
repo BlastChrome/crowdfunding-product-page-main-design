@@ -15,6 +15,7 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .main-container > img {
@@ -35,8 +36,7 @@ header {
   max-width: 560px;
   margin: 0 auto;
 }
-.nav-container {
-}
+
 .nav-links {
   position: absolute;
   top: 20%;
@@ -58,4 +58,43 @@ header {
 }
 .hero-2 {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    left: 30%;
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-1 {
+    display: none;
+  }
+  .hero-2 {
+    display: block;
+  }
+  header {
+    width: 80%;
+    max-width: 1024px;
+  }
+
+  .nav-links {
+    position: initial;
+    display: flex;
+    background-color: transparent;
+  }
+  .nav-links li {
+    padding: 0 20px;
+    border: none;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 14px;
+    width: 80px;
+    text-align: left;
+  }
+  .mb-nav-btns {
+    display: none;
+  }
 }
