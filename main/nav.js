@@ -5,12 +5,15 @@ const mb_nav = (() => {
 
     const openNav = () => {
         open_btn.classList.add("hidden"); 
-        close_btn.classList.remove("hidden");
+        close_btn.classList.remove("hidden"); 
+
+        nav.classList.remove("hidden");
 
     }
     const closeNav = () => {
         close_btn.classList.add("hidden"); 
-        open_btn.classList.remove("hidden");
+        open_btn.classList.remove("hidden");  
+        nav.classList.add("hidden");
     }
 
     // Event Listeners
