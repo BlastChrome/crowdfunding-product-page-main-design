@@ -13,6 +13,8 @@ ul {
 a {
   list-style: none;
   text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .main-container > img {
@@ -30,6 +32,8 @@ header {
   max-width: 560px;
   margin: 0 auto;
 }
+.nav-container {
+}
 .nav-links {
   position: absolute;
   top: 20%;
@@ -37,6 +41,14 @@ header {
   background: white;
   width: 80%;
   max-width: 350px;
+  border-radius: 8px;
+}
+.nav-links li {
+  padding: 0 20px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.199);
 }
 .mb-nav-btns {
   cursor: pointer;
