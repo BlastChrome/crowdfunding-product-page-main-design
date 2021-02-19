@@ -14,10 +14,15 @@ a {
   list-style: none;
   text-decoration: none;
   color: black;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
 }
-
+body {
+  background: #fafafa;
+}
+.content-border {
+  border: 2px solid #f2f2f2;
+}
 .main-container > img {
   position: absolute;
   z-index: -1;
@@ -45,6 +50,8 @@ header {
   width: 80%;
   max-width: 350px;
   border-radius: 8px;
+  z-index: 999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .nav-links li {
   padding: 0 20px;
@@ -60,10 +67,110 @@ header {
   display: none;
 }
 
+main {
+  max-width: 729px;
+  width: 100%;
+  margin: 200px auto 0 auto;
+  position: relative;
+}
+.section-a {
+  border-radius: 10px;
+  width: 90%;
+  background: white;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.section-a .master-img {
+  position: absolute;
+  top: -15%;
+  left: 44%;
+}
+.section-a .sec-a-top-text {
+  padding-top: 60px;
+  text-align: center;
+  width: 95%;
+  margin-right: 0;
+}
+
+.section-a .sec-a-top-text h1 {
+  font-size: 1.48rem;
+  margin-bottom: 25px;
+}
+
+.section-a .sec-a-top-text p {
+  color: #818181;
+  margin-bottom: 25px;
+}
+.sec-a-bot-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-a-bot-btns button {
+  padding: 21px 40px;
+  background-color: #39b5ab;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+}
+.sec-a-bot-btns img {
+  margin-left: 10px;
+}
+.bookmark-container {
+  display: flex;
+  align-items: center;
+}
+
+.bookmark-container a {
+  text-align: left;
+  display: none;
+  margin-left: 15px;
+  color: grey;
+}
+
 @media screen and (min-width: 768px) {
+  .hero-1 {
+    display: none;
+  }
+  .hero-2 {
+    display: block;
+  }
   .nav-links {
     left: 30%;
     transform: scale(1.1);
+    box-shadow: none;
+  }
+  .section-a .master-img {
+    left: 48%;
+  }
+
+  .section-a {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .sec-a-bot-btns {
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .sec-a-bot-btns button {
+    background-color: #39b5ab;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    /* new */
+    padding: 18px 39px;
+  }
+  .bookmark-container a {
+    display: block;
+  }
+  main {
+    margin: 110px auto 0 auto;
   }
 }
 
@@ -85,16 +192,25 @@ header {
     background-color: transparent;
   }
   .nav-links li {
-    padding: 0 20px;
+    padding-left: 0 0 0 30px;
     border: none;
   }
   a {
     color: rgba(255, 255, 255, 0.822);
     font-size: 14px;
     width: 80px;
-    text-align: left;
+    text-align: right;
   }
   .mb-nav-btns {
     display: none;
+  }
+  main {
+    margin: 130px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    margin: 250px auto 0 auto;
   }
 }
