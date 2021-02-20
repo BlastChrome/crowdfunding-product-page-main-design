@@ -1,3 +1,5 @@
+/* globals */
+
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +25,10 @@ body {
 .content-border {
   border: 2px solid #f2f2f2;
 }
+
+/* globals end */
+
+/* nav */
 .main-container > img {
   position: absolute;
   z-index: -1;
@@ -67,24 +73,33 @@ header {
   display: none;
 }
 
+/* nav end */
+
+/* section a */
 main {
   max-width: 729px;
   width: 100%;
   margin: 200px auto 0 auto;
   position: relative;
 }
-.section-a {
+section{
   border-radius: 10px;
   width: 90%;
   background: white;
-  margin: auto;
+  margin: auto ; 
+  margin-bottom: 25px ;
+}
+
+.section-a {
   padding-bottom: 40px;
 }
 .section-a .master-img {
   position: absolute;
-  top: -15%;
+  top: -6%;
   left: 44%;
 }
+
+
 .section-a .sec-a-top-text {
   padding-top: 60px;
   text-align: center;
@@ -130,6 +145,57 @@ main {
   margin-left: 15px;
   color: grey;
 }
+/* section a end */ 
+
+
+/* section b end */ 
+.section-b{
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+} 
+
+
+.sec-b-text{
+  margin: 30px 0; 
+} 
+
+ .decoration-line{
+  width: 80px; 
+  margin: auto;
+  height: 1px; 
+  background: rgb(190, 190, 190);
+}
+
+.sec-b-text .text-1{
+  font-weight: 700; 
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+.sec-b-text .text-2{
+  font-weight: 300; 
+  font-size: 14px;
+  color:grey;
+}
+
+.loading-bar{
+ height: 12px; 
+ width: 90%;
+ margin-left: 25px;
+ border-radius: 20px;
+ background: rgb(236, 236, 236); 
+ max-width: 600px; 
+ margin: auto;
+ position: absolute; 
+ left: 5%;
+} 
+.progress-bar{
+  background: #39b5ab; 
+  width: 78%; 
+  height: 12px;
+  border-radius: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
   .hero-1 {
@@ -137,6 +203,9 @@ main {
   }
   .hero-2 {
     display: block;
+  }
+  main {
+    margin: 110px auto 0 auto;
   }
   .nav-links {
     left: 30%;
@@ -157,24 +226,37 @@ main {
     justify-content: space-between;
   }
   .sec-a-bot-btns button {
-    background-color: #39b5ab;
-    color: white;
-    font-weight: 700;
-    font-size: 1rem;
-    border-radius: 50px;
-    border: none;
-    /* new */
     padding: 18px 39px;
   }
   .bookmark-container a {
     display: block;
+  } 
+  .section-b{
+    display: flex;
+    justify-content: flex-start;
   }
-  main {
-    margin: 110px auto 0 auto;
+  .sec-b-text-container{
+    margin-left: 40px;
+    display: flex;
+    width: 80%; 
+    
+  } 
+  .decoration-line{
+    width: 1px; 
+    margin: auto;
+    height: 80px; 
+    background: rgb(190, 190, 190);
+  }
+  .loading-bar{
+    top: 80%; 
+    width: 900px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+main {
+  margin: 130px auto 0 auto;
+}
   .hero-1 {
     display: none;
   }
@@ -203,10 +285,7 @@ main {
   }
   .mb-nav-btns {
     display: none;
-  }
-  main {
-    margin: 130px auto 0 auto;
-  }
+
 }
 
 @media screen and (min-width: 1440px) {
