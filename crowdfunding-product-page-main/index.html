@@ -17,8 +17,11 @@
 </head>
 <body>  
   <div class="main-container">
+
+    <!-- Hero -->
     <img class="hero-1" src="/crowdfunding-product-page-main/images/image-hero-mobile.jpg" alt="mobile-hero-img"> 
     <img class="hero-2 " src="/crowdfunding-product-page-main/images/image-hero-desktop.jpg" alt="desktop-hero-img"> 
+    
     <!-- Nav Section -->
     <header> 
         <img src="/crowdfunding-product-page-main/images/logo.svg" alt="logo-svg">
@@ -34,6 +37,7 @@
           <img class="close hidden" src="/crowdfunding-product-page-main/images/icon-close-menu.svg" alt="nav-close-button">
         </div>
     </header>  
+
     <!-- Content body -->
     <main>
       <!-- section a -->
@@ -46,8 +50,9 @@
         <div class="sec-a-bot-btns">
           <button class="btn">Back this project</button> 
           <div class="bookmark-container">
-            <img src="/crowdfunding-product-page-main/images/icon-bookmark.svg" alt="">
-            <a href="#">Bookmark</a>
+            <!-- <img  src="/crowdfunding-product-page-main/images/icon-bookmark.svg" alt=""> -->
+            <svg  width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle class="bookmark-icon" fill="#2F2F2F" cx="28" cy="28" r="28"/><path class='bookmark-icon-inner' fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+            <p class="bookmark-text">Bookmark</p>
           </div>
         </div>
       </section> 
@@ -100,7 +105,7 @@
             you’ll be added to a special Backer member list.</p>
           <div class="card-subtext-wrapper">
             <h1>101<span> left</span></h1> 
-            <button class="btn reward-btn">Select Reward</button>
+            <button id="bamboo-btn" class="btn reward-btn">Select Reward</button>
           </div>
         </div> 
 
@@ -113,7 +118,7 @@
             member list. Shipping is included.</p>
           <div class="card-subtext-wrapper">
             <h1>64<span> left</span></h1>  
-            <button class="btn reward-btn">Select Reward</button>
+            <button id="black-btn" class="btn reward-btn">Select Reward</button>
           </div>
         </div> 
 
@@ -126,18 +131,55 @@
             to our Backer member list. Shipping is included.</p>
           <div class="card-subtext-wrapper">
             <h1>0<span> left</span></h1>  
-            <button class="btn reward-btn dark-btn">Out of stock</button>
+            <button id="maho-btn" class="btn reward-btn dark-btn">Out of stock</button>
           </div>
         </div>
 
-      </section>
+      </section> 
+
+      <div class="modal" id="simpleModal">
+        <div class="modal-content">
+          <img class="close-btn" src="/crowdfunding-product-page-main/images/icon-close-modal.svg" alt="close-btn"> 
+          <p>Hello this is a modal</p>
+        </div>
+      </div>
+
 
     </main>
+  </div> 
 
-  </div>
+
 <script src="/main/nav.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- About
 Discover
 Get Started
