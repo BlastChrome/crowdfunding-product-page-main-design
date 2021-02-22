@@ -46,13 +46,10 @@ const modal = document.getElementById("simpleModal");
 
 const bamboo_btn = document.getElementById("bamboo-btn"); 
 const black_btn = document.getElementById("black-btn"); 
-const maho_btn = document.getElementById("maho-btn"); 
+const maho_btn = document.getElementById("maho-btn");  
+const proj_btn = document.getElementById("proj-btn");
 
 const close_btn = document.getElementsByClassName("close-btn")[0]; 
-
-
-console.log(bamboo_btn);
-console.log(black_btn);
 
 
 const openModal = () => {
@@ -70,7 +67,8 @@ const clickOutside = (e) => {
 
 bamboo_btn.addEventListener('click', openModal); 
 black_btn.addEventListener('click', openModal); 
-maho_btn.addEventListener('click', openModal);  
+maho_btn.addEventListener('click', openModal); 
+proj_btn.addEventListener('click',openModal); 
 close_btn.addEventListener('click', closeModal); 
 window.addEventListener('click',clickOutside)
 
