@@ -17,14 +17,12 @@
 </head>
 <body>  
   <div class="main-container">
-
     <!-- Hero -->
-    <img class="hero-1" src="/crowdfunding-product-page-main/images/image-hero-mobile.jpg" alt="mobile-hero-img"> 
-    <img class="hero-2 " src="/crowdfunding-product-page-main/images/image-hero-desktop.jpg" alt="desktop-hero-img"> 
-    
+    <img class="hero-1" src="/images/image-hero-mobile.jpg" alt="mobile-hero-img"> 
+    <img class="hero-2 " src="/images/image-hero-desktop.jpg" alt="desktop-hero-img"> 
     <!-- Nav Section -->
     <header> 
-        <img src="/crowdfunding-product-page-main/images/logo.svg" alt="logo-svg">
+        <img src="/images/logo.svg" alt="logo-svg">
           <nav>
               <ul class="nav-links hidden">
                 <li class="nav-link"><a href="#">About</a></li>
@@ -33,11 +31,10 @@
               </ul>
         </nav> 
         <div class="mb-nav-btns">
-          <img class="open" src="/crowdfunding-product-page-main/images/icon-hamburger.svg" alt="nav-open-button"> 
-          <img class="close hidden" src="/crowdfunding-product-page-main/images/icon-close-menu.svg" alt="nav-close-button">
+          <img class="open" src="/images/icon-hamburger.svg" alt="nav-open-button"> 
+          <img class="close hidden" src="/images/icon-close-menu.svg" alt="nav-close-button">
         </div>
     </header>  
-
     <!-- Content body -->
     <main>
       <!-- section a -->
@@ -50,7 +47,6 @@
         <div class="sec-a-bot-btns">
           <button id="proj-btn" class="btn">Back this project</button> 
           <div class="bookmark-container">
-            <!-- <img  src="/crowdfunding-product-page-main/images/icon-bookmark.svg" alt=""> -->
             <svg  width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle class="bookmark-icon" fill="#2F2F2F" cx="28" cy="28" r="28"/><path class='bookmark-icon-inner' fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
             <p class="bookmark-text">Bookmark</p>
           </div>
@@ -134,74 +130,104 @@
             <button id="maho-btn" class="btn reward-btn dark-btn">Out of stock</button>
           </div>
         </div>
-
       </section> 
 
+      <!-- Popup Modal -->
       <div class="modal" id="simpleModal">
         <div class="modal-content">
-          <img class="close-btn" src="/crowdfunding-product-page-main/images/icon-close-modal.svg" alt="close-btn"> 
+          <img class="close-btn" src="/images/icon-close-modal.svg" alt="close-btn"> 
           <div class="modal-top-text">
             <h3>Back this project</h3> 
             <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
           </div> 
+
           <div class="modal-card content-border">
-            <div class="card-top">
-              <input class="modal-radio" type="radio"><span class="modal-card-title">Pledge with no reward</span>  
-            </div>
+            <label class="container"><span class="modal-card-title">Pledge with no reward</span> 
+              <input class="modal-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
             <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
               you will be signed up to receive product updates via email.
               </p> 
           </div>
 
           <div class="modal-card content-border">
-            <div class="modal-card-top">
-              <input class="modal-radio" type="radio"><span class="modal-card-title">Bamboo Stand</span>
+            <label class="container">
+              <span class="modal-card-title">Bamboo Stand</span> 
               <span class="modal-subtext">Pledge 25$ or more</span>
-            </div>
+              <input class="modal-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
             <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
               you’ll be added to a special Backer member list.
               </p> 
               <div class="modal-card-subtext-wrapper">
                 <h1>101<span> left</span></h1> 
               </div>
+              <div class="pledge-wrapper">
+                <p>Enter your pledge</p>
+                <div class="pledge-amount-wrapper">
+                  <span>$</span>
+                  <input class="num-input" type="number" max="101">
+                  <button class="btn pledge-btn">Continue</button>
+                </div>
+              </div>
           </div>
 
           <div class="modal-card content-border">
-            <div class="modal-card-top">
-              <input class="modal-radio" type="radio"><span class="modal-card-title">Black Edition Stand</span>
+            <label class="container">
+              <span class="modal-card-title">Black Edition Stand</span> 
               <span class="modal-subtext">Pledge $75 or more</span>
-            </div>
+              <input class="modal-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
             <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
               member list. Shipping is included.
               </p> 
               <div class="modal-card-subtext-wrapper">
                 <h1>64<span> left</span></h1> 
+              </div> 
+              <div class="pledge-wrapper">
+                <p>Enter your pledge</p>
+                <div id="pledge1" class="pledge-amount-wrapper">
+                  <span>$</span>
+                  <input class="num-input" type="number" max="64">
+                  <button class="btn pledge-btn">Continue</button>
+                </div>
               </div>
           </div>
 
-          <div class="modal-card content-border dark">
-            <div class="modal-card-top">
-              <input class="modal-radio" type="radio"><span class="modal-card-title">Mahogany Special Edition</span>
+          <div class="modal-card content-border dark"> 
+            <label class="container">
+              <span class="modal-card-title">Mahogany Special Edition</span> 
               <span class="modal-subtext">Pledge $200 or more</span>
-            </div>
+              <input class="modal-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>   
             <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
               to our Backer member list. Shipping is included.
               </p> 
-              <div class="modal-card-subtext-wrapper">
+              <div id="pledge2" class="modal-card-subtext-wrapper">
                 <h1>0<span> left</span></h1> 
-              </div>
+              </div>   
           </div>
+        </div>
+      </div> 
 
- 
+      <div class="modal" id="finalModal">
+        <div class="modal-content">
+          <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#3CB3AB" cx="32" cy="32" r="32"/><path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24"/></g></svg>
+          <h2>Thanks for your support</h2> 
+          <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+            an email once our campaign is completed.</p> 
+          <button class="btn" id="exit-btn">Got it!</button>
         </div>
       </div>
-
-
     </main>
   </div> 
 
 
-<script src="/main/nav.js"></script>
+<script src="/main/app.js"></script>
 </body>
 </html>
 
